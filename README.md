@@ -37,3 +37,35 @@ Solution: [p3.hs](lists/p3.hs)
     13
 
 Solution: [p4.hs](lists/p4.hs)
+
+
+#### 5. Reverse a list
+
+    λ> reverse "A man, a plan, a canal, panama!"
+    "!amanap ,lanac a ,nalp a ,nam A"
+    λ> reverse [1,2,3,4]
+    [4,3,2,1]
+
+#### 6. Find out whether a list is a palindrome
+
+    λ> isPalindrome [1,2,3]
+    False
+    λ> isPalindrome "madamimadam"
+    True
+    λ> isPalindrome [1,2,4,8,16,8,4,2,1]
+    True
+
+#### 7. Flatten a nested list structure
+
+    λ> flatten (Elem 5)
+    [5]
+    λ> flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]])
+    [1,2,3,4,5]
+    λ> flatten (List [])
+    []
+
+
+#### 8. Eliminate consecutive duplicates of list elements
+
+    λ> compress "aaaabccaadeeee"
+    "abcade"
